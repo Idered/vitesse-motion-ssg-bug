@@ -1,6 +1,7 @@
 import { ViteSSG } from 'vite-ssg'
 import generatedRoutes from 'virtual:generated-pages'
 import { setupLayouts } from 'virtual:generated-layouts'
+import { MotionPlugin } from '@vueuse/motion'
 import App from './App.vue'
 
 import '@unocss/reset/tailwind.css'
@@ -15,6 +16,7 @@ export const createApp = ViteSSG(
   { routes, base: import.meta.env.BASE_URL },
   (ctx) => {
     // install all modules under `modules/`
+    ctx.app.use(MotionPlugin)
     Object.values(import.meta.globEager('./modules/*.ts')).forEach(i => i.install?.(ctx))
   },
 )

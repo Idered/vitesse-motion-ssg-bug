@@ -14,6 +14,7 @@
   "dependencies": {
     "@vueuse/core": "^7.7.1",
     "@vueuse/head": "^0.7.5",
+    "@vueuse/motion": "^2.0.0-beta.9",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.11",
     "prism-theme-vars": "^0.2.2",
@@ -43,6 +44,7 @@
     "https-localhost": "^4.7.1",
     "markdown-it-link-attributes": "^4.0.0",
     "markdown-it-prism": "^2.2.3",
+    "patch-vue-directive-ssr": "^0.0.1",
     "pnpm": "^6.32.2",
     "typescript": "^4.6.2",
     "unocss": "^0.27.2",
